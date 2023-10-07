@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* body{
+   font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Oswald', sans-serif;
+font-family: 'Pixelify Sans', cursive;
+font-family: 'Young Serif', serif;
+} */
+.h1,.p{
+    color: aliceblue;
+}
+h2{
+    font-family: 'Martian Mono', monospace;
+   font-size: 28px;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+font-size: 48px;
+}
+h3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background: linear-gradient(-90deg ,rgba(131, 2, 114, 0.719),rgba(119, 34, 230, 0.678)); */
+    background: linear-gradient(80deg ,rgb(0, 0, 0),rgba(0, 0, 0, 0.692));
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1,.card2,.card3{
+    margin: auto 0px;
+width: 300px;
+height: 350px;
+border: 2px solid rgb(172, 172, 172);
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+align-items: center;
+}
+.card2{
+    order: 1;
+    color: rgb(46, 49, 51);
+    position: relative;
+    background-color: rgba(2, 2, 2, 0.986);
+    box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.479);
+}
+.card1{
+    margin-left: auto;
+    position: absolute;
+    left:20%;
+    
+}
+.card3{
+    margin-right: auto;
+    position: absolute;
+    right: 20%;
+
+}
+
+.card1:hover{
+  
+    color: aliceblue;
+   order: 1;
+    background-color: rgba(0, 0, 0, 0.986);
+    box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.479);
+    transform:translate(-40px);
+}
+.card3:hover{
+    color: aliceblue;
+   
+   z-index: 1;
+    background-color: rgba(0, 0, 0, 0.986);
+    box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.479);
+    transform:translate(40px);
+}
+.card2:hover{
+    color: aliceblue;
+    transform: translateY(20px);
+}
